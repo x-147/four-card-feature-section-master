@@ -24,10 +24,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 400px);
   grid-template-rows: repeat(3, 250px);
-}
-
-.heading-text {
-  grid-column: 1 / 4;
+  justify-items: center;
+  align-items: center;
 }
 
 .card {
@@ -69,19 +67,49 @@ body {
   right: 0;
 }
 
+.heading-text-one {
+  font-size: 35px;
+  font-weight: 200;
+  opacity: 0.6;
+}
+
+.heading-text-two {
+  font-size: 35px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.heading-text-three-line-one,
+.heading-text-three-line-two {
+  text-align: center;
+  opacity: 0.6;
+}
+
+.heading-text {
+  grid-column: 1 / 4;
+  text-align: center;
+}
+
+.supervisor {
+  grid-row: 2 / 2;
+  background-image: linear-gradient(hsl(180, 62%, 55%) 4px, transparent 2px);
+}
+
 .team-builder {
+  grid-row: 2 / 2;
+  grid-column: 2 / 2;
   /* a gradient in css is considered to be an image */
   background-image: linear-gradient(hsl(0, 78%, 62%) 4px, transparent 2px);
 }
 
-.supervisor {
-  background-image: linear-gradient(hsl(180, 62%, 55%) 4px, transparent 2px);
+.calculator {
+  grid-row: 2 / 2;
+  grid-column: 3 / 3;
+  background-image: linear-gradient(hsl(212, 86%, 64%) 4px, transparent 2px);
 }
 
 .karma {
+  grid-row: 3 / 3;
+  grid-column: 2 / 2;
   background-image: linear-gradient(hsl(34, 97%, 64%) 4px, transparent 2px);
-}
-
-.calculator {
-  background-image: linear-gradient(hsl(212, 86%, 64%) 4px, transparent 2px);
 }
