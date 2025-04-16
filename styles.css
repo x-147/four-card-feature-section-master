@@ -20,13 +20,53 @@ body {
 }
 
 .main-container {
-  width: 1000px;
+  width: auto;
+
   display: grid;
-  grid-template-columns: repeat(3, 400px);
-  grid-template-rows: repeat(3, 250px);
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
   justify-items: center;
   align-items: center;
+  gap: 2rem;
+
+  /* give that space to top and bottom
+  of container, not flush against body */
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
+
+/* all heading related styling */
+
+.heading-text {
+  grid-column: 1 / 4;
+  text-align: center;
+
+  /* space between heading-text and cards */
+  margin-bottom: 3rem;
+}
+
+.heading-text-one {
+  font-size: 35px;
+  font-weight: 200;
+  opacity: 0.6;
+}
+
+.heading-text-two {
+  font-size: 35px;
+  font-weight: 600;
+  opacity: 0.7;
+
+  /* space between last big heading and small description */
+  margin-bottom: 1rem;
+}
+
+.heading-text-three-line-one,
+.heading-text-three-line-two {
+  text-align: center;
+  opacity: 0.6;
+}
+
+/* all card related styles */
 
 .card {
   width: 330px;
@@ -67,31 +107,8 @@ body {
   right: 0;
 }
 
-.heading-text-one {
-  font-size: 35px;
-  font-weight: 200;
-  opacity: 0.6;
-}
-
-.heading-text-two {
-  font-size: 35px;
-  font-weight: 600;
-  opacity: 0.7;
-}
-
-.heading-text-three-line-one,
-.heading-text-three-line-two {
-  text-align: center;
-  opacity: 0.6;
-}
-
-.heading-text {
-  grid-column: 1 / 4;
-  text-align: center;
-}
-
 .supervisor {
-  grid-row: 2 / 2;
+  grid-row: 2 / 4;
   background-image: linear-gradient(hsl(180, 62%, 55%) 4px, transparent 2px);
 }
 
@@ -103,7 +120,7 @@ body {
 }
 
 .calculator {
-  grid-row: 2 / 2;
+  grid-row: 2 / 4;
   grid-column: 3 / 3;
   background-image: linear-gradient(hsl(212, 86%, 64%) 4px, transparent 2px);
 }

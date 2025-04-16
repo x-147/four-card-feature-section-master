@@ -92,8 +92,9 @@ This challenge is completely free. Please share it with anyone who will find it 
 
 Note to self concepts:
 
-- background-image, linear gradient
+- background-image, linear gradient (transparent is a value)
 - box shadow
-- padding offsets for absolutely positioned div
+- you need padding offsets for absolutely positioned div, if ancestor has padding, since absolutely positioned child ignores it
 - your relatively positioned div should have dimentsions (height/width values),
   for absolutely positioned divs to position correctly
+- static width on main-container, example 1000px can make the container appear skewed to the right (obvs); use auto
