@@ -90,7 +90,7 @@ This challenge is completely free. Please share it with anyone who will find it 
 
 **Have fun building!** 🚀
 
-Note to self concepts:
+## Note to self concepts: 🚨
 
 - background-image, linear gradient (transparent is a value)
 - box shadow
@@ -98,3 +98,5 @@ Note to self concepts:
 - your relatively positioned div should have dimentsions (height/width values),
   for absolutely positioned divs to position correctly
 - static width on main-container, example 1000px can make the container appear skewed to the right (obvs); use auto
+- give content fixed dimensions, and the layout auto
+- auto fits to content, 1fr spaces out columns equally
